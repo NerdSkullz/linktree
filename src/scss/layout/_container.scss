@@ -1,0 +1,23 @@
+ // CONTAINERS STYLES
+.l-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem($container-size);
+
+  &--wide {
+    @include respond-to(wide) {
+      margin: 0 auto;
+    }
+  }
+
+  &--narrow {
+    @include respond-to(tablet) {
+      margin: 0 auto;
+      max-width: 65%;
+    }
+  }
+
+  & + .l-container {
+    margin-top: rem(30px);
+  }
+}

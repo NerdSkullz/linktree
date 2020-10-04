@@ -1,0 +1,48 @@
+//TYPOGRAPHY STYLES
+.t-heading-1,
+%t-heading-1 {
+  font-size: em(46, 18);
+  font-weight: $font-weight-bold;
+  line-height: rem(62px);
+
+  @include respond-to(desktop) {
+    font-size: em(90, 18);
+    line-height: rem(95px);
+  }
+}
+
+.t-heading-2,
+%t-heading-2 {
+  font-size: em(30, 18);
+  font-weight: $font-weight-bold;
+  line-height: rem(35px);
+
+  @include respond-to(desktop) {
+    font-size: em(40, 18);
+    line-height: rem(55px);
+  }
+}
+
+.t-heading-3,
+%t-heading-3 {
+  font-size: em(26, 18);
+  font-weight: $font-weight-regular;
+  line-height: rem(36px);
+}
+
+.t-heading-4,
+%t-heading-4 {
+  font-size: em(24, 18);
+  font-weight: $font-weight-bold;
+  line-height: rem(28px);
+}
+
+.t-heading-5,
+%t-heading-5 {
+  font-size: em(18, 18);
+  font-weight: $font-weight-bold;
+}
+
+.t-center {
+  text-align: center;
+}

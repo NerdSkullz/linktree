@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "name": "linktree-code-challenge",
+  "private": false,
+  "description": "NerdSkullz - Linktree code challenge",
   "version": "0.1.0",
-  "license": "0BSD",
+  "license": "MIT",
+  "author": "Pietro Di Marzo - NerdSkullz",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -14,18 +15,23 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.66",
+    "gatsby": "^2.20.25",
+    "gatsby-plugin-sass": "^2.2.3",
+    "gatsby-plugin-tslint": "^0.0.2",
+    "gatsby-plugin-typescript": "^2.3.3",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "sass": "^1.26.5"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "dotenv": "^8.2.0",
+    "prettier": "2.1.2",
+    "typescript": "^3.8.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/NerdSkullz/linktree"
   }
 }

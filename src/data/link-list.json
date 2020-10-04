@@ -1,0 +1,39 @@
+{
+  "list": [
+    {
+      "href": "/link-list-1",
+      "target": "_blank",
+      "text": "Lorem ipsum dolor sit amet?"
+    },
+    {
+      "href": "/link-list-2",
+      "target": "_blank",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis mollis erat id convallis."
+    },
+    {
+      "href": "/link-list-3",
+      "target": "_blank",
+      "text": "Lorem ipsum dolor sit amet mollis erat id."
+    },
+    {
+      "href": "/link-list-4",
+      "target": "_blank",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas."
+    },
+    {
+      "href": "/link-list-5",
+      "target": "_blank",
+      "text": "Donec consequat sem non neque suscipit dapibus. Pellentesque consectetur, enim in tempor malesuada."
+    },
+    {
+      "href": "/link-list-6",
+      "target": "_blank",
+      "text": "Donec dapibus odio augue, ut lobortis mi ullamcorper ac. In et quam sed felis accumsan venenatis ac nec ex."
+    },
+    {
+      "href": "/link-list-7",
+      "target": "_blank",
+      "text": "Nunc pulvinar arcu arcu, non iaculis elit auctor vitae. Suspendisse semper tortor et ante facilisis vulputate."
+    }
+  ]
+}

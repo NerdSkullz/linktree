@@ -1,0 +1,36 @@
+// MEDIA QUERIES
+$size-tablet: 768;
+$size-desktop: 1025;
+$size-wide: 1300;
+
+$window-breakpoints: (
+  tablet: 768,
+  desktop: 1025,
+  wide: 1300
+);
+
+// CONTAINER SIZE
+$header-height: 52px;
+$container-size: 1200px;
+
+// TIMINGS
+$nav-transition-time: .3s;
+$global-transition-time: .2s;
+
+// FONT WEIGHTS
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// BASE FONT SIZE
+$base-font: 16;
+
+// GLOBAL STYLES
+$global-border-radius: 4px;
+
+// Z-INDEXES
+$z-behind: -1;
+$z-forward: 1;
+$z-dropdown: 1000;
+$z-navigation: 2000;

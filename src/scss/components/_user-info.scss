@@ -1,0 +1,22 @@
+.user-info {
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: rem(30px);
+  }
+
+  &__media {
+    margin-bottom: rem(16px);
+
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  &__title {
+    font-size: em(16, 18);
+    line-height: 1.5;
+  }
+}

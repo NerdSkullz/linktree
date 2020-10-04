@@ -1,0 +1,53 @@
+.linktree {
+  &__wrapper {
+    margin: 0px auto;
+    max-width: rem(680px);
+    padding: rem(10px);
+
+    @include respond-to(desktop) {
+      padding: rem(10px); 
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: rem(15px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  &__link,
+  &__trigger {
+    background: $colour-green;
+    border-radius: 4px; 
+    color: $colour-txt;
+    display: block;
+    padding: rem(15px);
+    text-align: center;
+    transition: all, $global-transition-time;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      background: $colour-txt;
+      color: $colour-green;
+    }
+  }
+  
+  &__footer {
+    align-items: center;
+    display: flex;
+    font-size: em(13, 18);
+    font-style: italic;
+    justify-content: center;
+    padding: rem(10px) 0;
+
+    a {
+      display: inline-block;
+      margin-left: rem(5px);
+    }
+  }
+}

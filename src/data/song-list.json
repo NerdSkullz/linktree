@@ -1,0 +1,104 @@
+{
+  "list": [
+    {
+      "track": {
+        "image": {
+          "alt": "Song image",
+          "src": "https://picsum.photos/100/100",
+          "srcset": ""
+        },
+        "title": "At the gate of Night City",
+        "artist": "NerdSkullz",
+        "url" : "https://nerdskullz-misc.s3-ap-southeast-2.amazonaws.com/NerdSkullz+-+At+The+Gates+Of+Night+City.mp3"
+      },
+      "providers": [
+        {
+          "link": {
+            "href": "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
+            "target": "_blank",
+            "text": "Spotify"
+          },
+          "image": {
+            "alt": "Spotify Logo",
+            "src": "https://picsum.photos/30/30",
+            "srcset": ""
+          }
+        },
+        {
+          "link": {
+            "href": "https://music.apple.com/us/album/blinding-lights/1488408555?i=1488408568",
+            "target": "_blank",
+            "text": "Apple Music"
+          },
+          "image": {
+            "alt": "Apple Music Logo",
+            "src": "https://picsum.photos/30/30",
+            "srcset": ""
+          }
+        },
+        {
+          "link": {
+            "href": "https://soundcloud.com/nerdskullz/nerdskullz-at-the-gates-of-night-city",
+            "target": "_blank",
+            "text": "Soundcloud"
+          },
+          "image": {
+            "alt": "Soundcloud Logo",
+            "src": "https://picsum.photos/30/30",
+            "srcset": ""
+          }
+        }
+      ]
+    },
+    {
+      "track": {
+        "image": {
+          "alt": "Song image",
+          "src": "https://picsum.photos/100/100",
+          "srcset": ""
+        },
+        "title": "Sunday Morning 2am",
+        "artist": "NerdSkullz",
+        "url" : "https://nerdskullz-misc.s3-ap-southeast-2.amazonaws.com/NerdSkullz+-+Sunday+Morning+2am.mp3"
+      },
+      "providers": [
+        {
+          "link": {
+            "href": "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
+            "target": "_blank",
+            "text": "Spotify"
+          },
+          "image": {
+            "alt": "Spotify Logo",
+            "src": "https://picsum.photos/30/30",
+            "srcset": ""
+          }
+        },
+        {
+          "link": {
+            "href": "https://music.apple.com/us/album/blinding-lights/1488408555?i=1488408568",
+            "target": "_blank",
+            "text": "Apple Music"
+          },
+          "image": {
+            "alt": "Apple Music Logo",
+            "src": "https://picsum.photos/30/30",
+            "srcset": ""
+          }
+        },
+        {
+          "link": {
+            "href": "https://soundcloud.com/nerdskullz/nerdskullz-sunday-morning-2am",
+            "target": "_blank",
+            "text": "Soundcloud"
+          },
+          "image": {
+            "alt": "Soundcloud Logo",
+            "src": "https://picsum.photos/30/30",
+            "srcset": ""
+          }
+        }
+      ]
+    }
+  ]
+}

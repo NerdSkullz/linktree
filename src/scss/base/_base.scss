@@ -1,0 +1,101 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Text highlight
+::selection {
+  background: $colour-cyan;
+  color: $colour-yellow;
+}
+
+::-moz-selection {
+  background: $colour-cyan;
+  color: $colour-yellow;
+}
+
+html,
+body {
+  -moz-osx-font-smoothing: auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased !important;
+  background: $colour-grey--light;
+  color: $colour-navy;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: $font-weight-regular;
+  line-height: rem(31px);
+  min-width: 320px;
+  position: relative;
+  text-rendering: optimizeLegibility !important;
+  width: 100%;
+  z-index: 0;
+}
+
+body {
+  font-size: em(18);
+}
+
+// Links
+a {
+  text-decoration: none;
+
+  &[href*='mailto:'] {
+    word-wrap: break-word;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-size: em(18, 18);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Reset Lists
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+// Images
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+// Paragraph
+p {
+  b,
+  strong {
+    font-weight: 600;
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+}
+
+// Default Transitions
+a,
+input[type='text'], // sass-lint:disable-line force-attribute-nesting no-qualifying-elements
+textarea,
+button,
+[class^='i-button'] {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transform-origin: center center;
+  transition-duration: $global-transition-time;
+  transition-property: background-color, color, opacity, border, border-color, background-position, outline, box-shadow, border-bottom, text-decoration, left, top, transform;
+  transition-timing-function: linear;
+}

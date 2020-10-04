@@ -1,0 +1,68 @@
+//MEDIA QUERIES
+
+@mixin respond-to($media) {
+  @if $media == tablet {
+    @media only screen and (min-width: em($size-tablet)) { @content; }
+  }
+  @if $media == desktop {
+    @media only screen and (min-width: em($size-desktop)) { @content; }
+  }
+  @if $media == wide {
+    @media only screen and (min-width: em($size-wide)) { @content; }
+  }
+}
+
+@mixin respond-until($media) {
+  @if $media == tablet {
+    @media only screen and (max-width: em($size-tablet)) { @content; }
+  }
+  @if $media == desktop {
+    @media only screen and (max-width: em($size-desktop)) { @content; }
+  }
+  @if $media == wide {
+    @media only screen and (max-width: em($size-wide)) { @content; }
+  }
+  @if $media == mobile {
+    @media only screen and (max-width: em($size-tablet)) { @content; }
+  }
+}
+
+@mixin respond-between($lower, $upper, $breakpoints: $window-breakpoints) {
+  $min: breakpoint-min($lower, $breakpoints);
+  $max: breakpoint-max($upper, $breakpoints);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include media-breakpoint-up($lower, $breakpoints) {
+      @content;
+    }
+  } @else if $min == null {
+    @include media-breakpoint-down($upper, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to-only($media) {
+  @if $media == mobile {
+    @media screen and (min-width: em(0)) and (max-width: em($size-tablet)) { @content; }
+  }
+  @if $media == tablet {
+    @media screen and (min-width: em($size-tablet)) and (max-width: em($size-desktop)) { @content; }
+  }
+  @if $media == desktop {
+    @media screen and (min-width: em($size-desktop)) and (max-width: em($size-wide)) { @content; }
+  }
+  @if $media == wide {
+    @media screen and (min-width: em($size-wide)) { @content; }
+  }
+}
+
+@mixin respond-to-min($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}

@@ -1,0 +1,51 @@
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-mute-button {
+  display: none
+}
+
+audio::-webkit-media-controls-panel {
+  background: transparent;
+  -webkit-filter: hue-rotate(143deg) saturate(10);
+}
+
+.track {
+  &__player {
+    border-bottom: 1px solid $colour-grey--dark;
+    display: flex;
+    padding: rem(20px);
+  }
+  
+  &__media {
+    margin-right: rem(20px);
+    width: 30%;
+
+    @include respond-to(tablet) {
+      width: 20%;
+    }
+  }
+
+  &__info-audio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+
+    @include respond-to(tablet) {
+      width: 80%;
+    }
+  }
+
+  &__info {
+    display: block;
+    margin-bottom: rem(10px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  &__audio {
+    width: 100%;
+  }
+}
